@@ -1,0 +1,121 @@
+<link
+  href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+  rel="stylesheet"
+/>
+
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="back-circle"></div>
+    <ion-title class="ion-text-center custom-font">Formulario</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+  <div class="ion-padding">
+    
+    <form class="ion-padding" (ngSubmit)="datosSend()">
+      <div class="wrap-input">
+        <input
+          class="input"
+          type="text"
+          name="Nombre"
+          placeholder="Nombre Completo"
+          required
+          [(ngModel)]="data"
+        />
+      </div>
+
+      <div class="wrap-input">
+        <input class="input" type="number" name="Edad" placeholder="Edad" [(ngModel)]="datos2" required/>
+      </div>
+<!-- 
+      <div class="wrap-input">
+        <input class="input" type="text" name="Sexo" placeholder="Sexo" [(ngModel)]="data.Sexo" required/>
+      </div>
+
+      <div class="wrap-input">
+        <input
+          class="input"
+          type="text"
+          name="Documento"
+          placeholder="Tipo De Documento"
+          required
+          [(ngModel)]="data.Documento"
+        />
+      </div>
+
+      <div class="wrap-input">
+        <input
+          class="input"
+          type="number"
+          name="Num_documento"
+          placeholder="Numero de Documento"
+          required
+          [(ngModel)]="data.Num_documento"
+        />
+      </div>
+
+      <div class="wrap-input">
+        <input
+          class="input"
+          type="text"
+          name="Addres"
+          placeholder="Direccion"
+          [(ngModel)]="data.Direccion"
+          required
+        />
+      </div>
+
+      <div class="wrap-input">
+        <input
+          class="input"
+          type="number"
+          name="Tel"
+          placeholder="Telefono"
+          [(ngModel)]="data.Telefono"
+          required
+        />
+      </div>
+
+      <div class="wrap-input">
+        <input
+          class="input"
+          type="Email"
+          name="user-email"
+          placeholder="Email"
+          [(ngModel)]="data.Email"
+          required
+        />
+      </div>
+
+      <div class="wrap-input">
+        <input
+          class="input"
+          type="text"
+          name="Career"
+          placeholder="Carrera"
+          [(ngModel)]="data.Carrera"
+          required
+        />
+      </div>
+
+      <div class="wrap-input">
+        <input
+          class="input"
+          type="text"
+          name="Jornada"
+          placeholder="Jornada"
+          [(ngModel)]="data.Jornada"
+          required
+        />
+      </div> -->
+
+      <div class="container-form-btn">
+        <button class="form-btn custom-font">Submit</button>
+      </div>
+    </form>
+  </div>
+</ion-content>
